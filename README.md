@@ -1,8 +1,9 @@
 # rescuetime.js [![Build Status](https://travis-ci.org/willwashburn/rescuetime.js.svg?branch=master)](https://travis-ci.org/willwashburn/rescuetime.js)
+An API client for rescuetime.com
 
 > **Note:** This is in super alpha and really hasn't been tested or used. Feedback and PR's welcome!
 
-An API client for rescuetime.com
+
 
 ## Install
 ```
