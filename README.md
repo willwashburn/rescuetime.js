@@ -11,6 +11,7 @@ npm install rescuetime.js
 
 ## Usage
 This is still very much in alpha. You can make calls to the api like so:
+> **Note:** I suggest you use [dotenv](https://www.npmjs.com/package/dotenv) to store your API key since you definitely do not want that in version control.
 ```js
 
     var Rescuetime = require('rescuetime.js').create('YOUR_API_KEY')
@@ -42,7 +43,6 @@ You can also use promises if that's your squeeze
 
 There will be a series of methods that could be helpful. The first of which is a shortcut to getting all productive time for today:
 ```js
-Rescuetime.getTodaysTotalProductiveTime().then(function(res) { console.log(res) })
+Rescuetime.totalProductiveTimeInSeconds().then(function(res) { console.log(res) })
 
 ```
-> **Note:** I suggest you use [dotenv](https://www.npmjs.com/package/dotenv) to store your API key since you definitely do not want that in version control.
