@@ -1,6 +1,6 @@
 {
   "name": "rescuetime.js",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "An API client for rescuetime.com",
   "main": "index.js",
   "scripts": {
