@@ -10,11 +10,38 @@ npm install rescuetime.js
 ```
 
 ## Usage
-This is still very much in alpha. In fact, there is only one method you can use!
+This is still very much in alpha. You can make calls to the api like so:
 ```js
 
-var Rescuetime = require('rescuetime.js').create('YOUR_API_KEY');
+    var Rescuetime = require('rescuetime.js').create('YOUR_API_KEY')
 
+
+   var parameters = {
+        pv: 'rank',
+        rk: 'productivity'
+    }
+
+    this.request('GET', 'anapi/data', parameters, function(err,response) {
+            console.log(res)
+    ));
+
+```
+
+You can also use promises if that's your squeeze
+```js
+
+   var parameters = {
+        pv: 'rank',
+        rk: 'productivity'
+    }
+
+    this.request('GET', 'anapi/data', parameters)
+    .then(function(response) { console.log(response})
+
+```
+
+There will be a series of methods that could be helpful. The first of which is a shortcut to getting all productive time for today:
+```js
 Rescuetime.getTodaysTotalProductiveTime().then(function(res) { console.log(res) })
 
 ```
