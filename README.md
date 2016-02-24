@@ -12,6 +12,7 @@ npm install rescuetime.js
 ## Usage
 This is still very much in alpha. You can make calls to the api like so:
 > **Note:** I suggest you use [dotenv](https://www.npmjs.com/package/dotenv) to store your API key since you definitely do not want that in version control.
+
 ```js
 
     var Rescuetime = require('rescuetime.js').create('YOUR_API_KEY')
